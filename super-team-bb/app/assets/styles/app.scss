@@ -1,0 +1,197 @@
+$icon-font-path: "bootstrap/fonts/bootstrap/";
+@import "bootstrap/stylesheets/_bootstrap.scss";
+
+
+
+
+body {
+  padding: 0;
+}
+
+
+/* Everything but the jumbotron gets side spacing for mobile first views */
+*{
+  margin: 0;
+  padding: 0;
+}
+
+.header,
+.marketing,
+.footer {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+/* Custom page header */
+.navbar{
+  margin-bottom: 0 !important;
+  background-color: #777;
+  position: absolute;
+  height:80px;
+}
+.logo{
+  text-align: center;
+  margin-top: 14px;
+  margin-left: -19px;
+  img{
+    width: 33% !important;
+    margin-top: 5px;
+    height: 40px !important;
+  }
+}
+
+.container{
+  min-width: 100%;
+}
+
+
+.header {
+  margin-bottom: 10px;
+  height:50px;
+
+  /* Make the masthead heading the same height as the navigation */
+  h3 {
+    margin-top: 0;
+    margin-bottom: 0;
+    line-height: 40px;
+    padding-bottom: 19px;
+  }
+}
+.log-in{
+  float: right;
+  margin-top: -37px;
+  margin-right: 56px;
+  .glyphicon-log-in{
+    font-size: 30px;
+    color: #fff;
+  }
+}
+.row.pdtp10{
+  a{
+    color: #fff;
+  }
+}
+.glyphicon-home, .glyphicon-stats{
+  font-size: 30px;
+  color: #fff;
+}
+/*Login Page CSS*/
+
+.login-container{
+  width: 34%;
+  margin: 12% 32%;
+  position: absolute;  
+  .row{
+    border: 1px solid #ccc;
+    box-shadow: 10px 10px 7px #999;
+    height:400px;
+    .col-md-12{
+      margin-top:81px;
+      .login-form{
+        .inner-addon{
+          position: relative;
+          .glyphicon{
+            position: absolute;
+            padding: 10px;
+            pointer-events: none;
+            left:0;
+          }
+          input{
+            padding-left:  30px;
+          }
+          .has-error{
+            border: 1px solid red;
+          }
+        }
+        .glyphicon-circle-arrow-right{
+          padding-left: 10px;
+        }
+        .submit{
+          .btn-primary{
+            background-color: #009AA6 !important;
+            border: none !important;
+          }
+        }
+      }
+    }
+  }
+}
+
+.login{
+  width:100%;
+}
+
+.list{
+  position: relative;
+  margin: 7%;
+  .heading{
+    text-align: center;
+  }
+  table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 54%;
+    margin:0 auto;
+  }
+
+  td, th {
+      border: 1px solid #dddddd;
+      text-align: center;
+      padding: 8px;
+      cursor: pointer;
+  }
+
+  tr:nth-child(even) {
+      background-color: #eee;
+  }
+  tr:hover{
+    background-color: #ccc;
+  }
+
+  .map-body{
+    margin-left: 380px;
+    #map{
+      width:500px;
+      height:380px;
+    }
+  }
+  
+}
+
+/* Custom page footer */
+.footer {
+  padding-top: 19px;
+  color: #777;
+  border-top: 1px solid #e5e5e5;
+  position: fixed;
+  bottom:0;
+  min-width: 100%;
+  min-height: 75px;
+  background-color: #777;
+  -webkit-transform: translateZ(0)
+}
+
+.container-narrow > hr {
+  margin: 30px 0;
+}
+
+/* Main marketing message and sign up button */
+.jumbotron {
+  text-align: center;
+  border-bottom: 1px solid #e5e5e5;
+
+  .btn {
+    font-size: 21px;
+    padding: 14px 24px;
+  }
+}
+
+/* Supporting marketing content */
+.marketing {
+  margin: 40px 0;
+
+  p + h4 {
+    margin-top: 28px;
+  }
+}
+

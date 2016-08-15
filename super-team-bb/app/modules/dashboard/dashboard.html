@@ -1,0 +1,20 @@
+<div class="list" ng-init="dashBoardInit()">
+	<div class="heading">
+		<h2>Available Garages</h2>
+	</div>
+	<div class="list-body">
+		<table class="list-table">
+  <tr>
+    <th>Garage Name</th>
+    <th>State</th>
+  </tr>
+  <tr ng-repeat="g in garageList">
+    <td ng-click="openGarageDetails(g)">{{g.properties.title}}</td>
+    <td>
+      <img class="img-circle" ng-src="{{g.properties.layers['parking.garage'].data.FreeSpaceShort + g.properties.layers['parking.garage'].data.FreeSpaceLong > 0 ? 'assets/images/green.png' : 'assets/images/red.svg'}}" height="30" width="30">
+    </td>
+  </tr>
+  
+</table>
+	</div>
+</div>
